@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #212121; */
+  background: #fff1c1;
+  height: 100vh;
+}
+.face {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+  position: relative;
+}
+.face:after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  width: 135px;
+  height: 70px;
+  background-color: #000;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: all 1s;
+}
+.face:hover:after {
+  border-top-left-radius: 90%;
+  border-top-right-radius: 90%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.eye {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  float: left;
+  margin: 12px;
+  display: flex;
+  grid-gap: 20px;
+  overflow: hidden;
+  background-color: #000;
+}
+.ball {
+  background-color: #fff;
+  width: 52.3px;
+  height: 52.3px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.massage {
+  width: 450px;
+  height: 100px;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  z-index: 100;
+  display: none;
+  transition: all 0.7s;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: sans-serif;
+  top: 56%;
+  left: 65%;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+.btns {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-top: 10px;
+  grid-gap: 30px;
+}
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #000;
+  color: gold;
+  font-size: 17px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.show {
+  display: flex;
+}
